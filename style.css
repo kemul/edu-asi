@@ -1,0 +1,195 @@
+body{font-family:'Poppins',sans-serif;margin:0;background:#fffafc;color:#333}
+.navbar{display:flex;justify-content:space-between;align-items:center;padding:10px 20px;background:#fff;border-bottom:1px solid #ffd1e0;position:sticky;top:0;z-index:100}
+.nav-left{display:flex;align-items:center}
+.nav-logo{width:55px;height:55px;border-radius:50%;margin-right:10px}
+.brand{font-weight:700;color:#d63384;font-size:22px}
+.nav-right{display:flex;gap:20px}
+.nav-right a{text-decoration:none;color:#444;font-weight:500}
+.nav-right a:hover{color:#d63384}
+.menu-toggle{display:none;flex-direction:column;cursor:pointer;width:30px}
+.menu-toggle span{height:3px;background:#d63384;margin:4px 0;border-radius:2px}
+@media(max-width:768px){.nav-right{position:absolute;top:60px;right:0;background:#fff;width:100%;flex-direction:column;align-items:center;gap:15px;padding:15px 0;box-shadow:0 8px 20px rgba(0,0,0,.1);display:none}.nav-right.active{display:flex}.menu-toggle{display:flex}}
+.hero-centered{text-align:center;padding:40px 20px;display:flex;flex-direction:column;align-items:center;justify-content:center}
+.hero-banner{max-width:380px;margin-bottom:20px;border-radius:12px}
+h1{color:#333;margin-bottom:10px;font-weight:700}
+p{max-width:500px;margin:10px auto;line-height:1.6;text-align:center}
+.btn-primary{background:#ff8cb4;color:#fff;font-weight:600;padding:8px 20px;border-radius:10px;text-decoration:none;box-shadow:0 3px 6px rgba(0,0,0,0.1);font-size:14px;text-align:center;display:inline-block;margin:0 auto}
+.center-container{text-align:center;margin-top:10px}
+.contact{text-align:center;margin-top:10px}
+.wa-link{text-decoration:none;color:#a86482;font-size:14px;display:inline-flex;align-items:center;gap:8px}
+.wa-icon{width:22px;height:22px}
+.footer{text-align:center;padding:20px;background:#ffe8f1;color:#444;margin-top:30px}
+.fade-in{animation:fadeIn 1s ease-in-out forwards;opacity:0}
+.fade-in-delay{animation:fadeIn 1.3s ease-in-out forwards;opacity:0;animation-delay:0.3s}
+.fade-in-delay2{animation:fadeIn 1.5s ease-in-out forwards;opacity:0;animation-delay:0.6s}
+@keyframes fadeIn{from{opacity:0;transform:translateY(20px)}to{opacity:1;transform:translateY(0)}}
+
+
+/* === EduASI v24 – Pink & Layout Polish + Smooth Scroll === */
+html { scroll-behavior: smooth; }
+
+.section-title {
+  color: #E980A4 !important;
+  text-align: center !important;
+  font-weight: 700;
+  margin-top: 1.2rem;
+  margin-bottom: 0.4rem;
+  text-shadow: 0 1px 3px rgba(233,128,164,0.25);
+}
+.section-title::after {
+  content: "";
+  display: block;
+  width: 80px;
+  height: 3px;
+  background-color: #F3C6D8;
+  margin: 10px auto 0;
+  border-radius: 2px;
+}
+.section-subtitle {
+  text-align: center;
+  font-size: 0.98rem;
+  color: #D86A8A;
+  max-width: 640px;
+  margin: 0 auto 1.2rem;
+  opacity: 0;
+  animation: fadeInUp 0.9s ease 0.1s forwards;
+}
+
+.cta-center, .center-btn { text-align: center !important; display: block; }
+.btn.btn-primary { 
+  background: #E980A4; 
+  border-radius: 12px; 
+  padding: 10px 22px; 
+  font-weight: 600; 
+  transition: all .25s ease;
+  display: inline-block; 
+}
+.btn.btn-primary:hover { background: #D86A8A; transform: translateY(-2px); }
+
+.menu-toggle span { background: #E980A4 !important; }
+
+.cards { gap: 22px; padding: 20px; }
+.card {
+  background: #FFFFFF;
+  border: 1px solid #F2C8D8;
+  border-radius: 16px;
+  box-shadow: 0 6px 16px rgba(233,128,164,0.18);
+  padding: 18px;
+  animation: fadeInUp 0.6s ease forwards;
+  opacity: 0;
+}
+.card h3 { color: #5C3A52; margin-top: 0; }
+
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(14px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+@media (max-width: 768px) {
+  .section-title { font-size: 1.45rem; }
+  .btn.btn-primary { padding: 9px 18px; font-size: 14px; }
+}
+
+
+
+/* === EduASI v26 – Soft Glow Pastel Edition === */
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(to bottom, #FFF4F2, #FFF9F6);
+  color: #7A4A55;
+  transition: background 0.5s ease;
+}
+.nav-logo {
+  height: 52px;
+  transition: all 0.4s ease;
+  filter: drop-shadow(0 0 4px rgba(244,166,160,0.4));
+}
+.nav-logo:hover {
+  transform: scale(1.05);
+  filter: drop-shadow(0 0 8px rgba(244,166,160,0.7));
+}
+.btn {
+  border-radius: 12px;
+  background: #F4A6A0;
+  color: #fff;
+  transition: all 0.3s ease;
+  padding: 10px 24px;
+  display: inline-block;
+}
+.btn:hover {
+  background: #F3C6B6;
+  transform: translateY(-2px);
+}
+.card {
+  background: #FFF4F2;
+  border-radius: 16px;
+  box-shadow: 0 6px 12px rgba(244,166,160,0.2);
+  margin-bottom: 24px;
+  transition: all 0.3s ease;
+}
+.card:hover {
+  transform: scale(1.01);
+  box-shadow: 0 8px 16px rgba(244,166,160,0.25);
+}
+.fade-in {
+  opacity: 0;
+  animation: fadeIn 0.8s ease forwards;
+}
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+
+/* === EduASI v27 – Improved Test Page Layout === */
+.card {
+  background: #FFF9F6;
+  border: 1px solid #F4C6C1;
+  border-radius: 16px;
+  padding: 20px;
+  margin-bottom: 24px;
+  box-shadow: 0 4px 12px rgba(244, 166, 160, 0.15);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(244, 166, 160, 0.25);
+}
+.sub-card {
+  background: #FFFFFF;
+  border-radius: 12px;
+  padding: 16px;
+  margin-bottom: 16px;
+  border: 1px solid #F3D3CF;
+}
+.options label {
+  margin-right: 10px;
+  font-weight: 500;
+  color: #7A4A55;
+}
+input[type="text"], input[type="tel"] {
+  border: 1px solid #F4C6C1;
+  border-radius: 8px;
+  padding: 8px 12px;
+  width: 100%;
+  margin-top: 5px;
+}
+
+
+/* === EduASI v28 – Improved Questionnaire Borders === */
+.sub-card {
+  background: #FFFFFF;
+  border-radius: 12px;
+  padding: 16px;
+  margin-bottom: 16px;
+  border: 1px solid #F3D3CF;
+  transition: box-shadow 0.3s ease;
+}
+.sub-card + .sub-card {
+  border-top: 2px dashed #F7D6D3;
+  padding-top: 20px;
+  margin-top: 20px;
+}
+.sub-card:hover {
+  box-shadow: 0 4px 10px rgba(244, 166, 160, 0.15);
+}

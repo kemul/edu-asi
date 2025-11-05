@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Video Edukasi - EduASI</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="assets/favicon.png" type="image/png">
+</head>
+<body class='fade-in'>
+  <nav class="navbar">
+    <div class="nav-left">
+      <img src="assets/logo-eduasi.png" alt="Logo EduASI" class="nav-logo">
+      <span class="brand">EduASI</span>
+    </div>
+    <div class="menu-toggle"><span></span><span></span><span></span></div>
+    <div class="nav-right">
+      <a href="index.html">Beranda</a>
+      <a href="video.html">Video Edukasi</a>
+      <a href="pretest.html">Pre-Test</a>
+      <a href="posttest.html">Post-Test</a>
+      <a href="index.html#kontak">Kontak</a>
+    </div>
+  </nav>
+
+  <section id="videos" class="section">
+    <h2 class="section-title">Daftar Video Edukasi</h2>
+    <p class="section-subtitle">Yuk, tonton video pembelajaran ASI yang penuh makna dan inspirasi!</p>
+    <div class="cards">
+      <article class="card"><h3>🌼 Video 1 – Untuk Anak Kita: Pentingnya Air Susu Ibu (ASI)</h3><p>Halo Ibu Hebat! Yuk pahami bersama mengapa ASI begitu penting untuk tumbuh kembang buah hati kita.</p><div class="video-wrapper"><iframe src="https://www.youtube.com/embed/y-2JOaaAljs" allowfullscreen></iframe></div></article>
+      <article class="card"><h3>🤱 Video 2 – Posisi Menyusui dan Pelekatan Bayi pada Payudara</h3><p>Kenyamanan saat menyusui dimulai dari posisi dan pelekatan yang benar.</p><div class="video-wrapper"><iframe src="https://www.youtube.com/embed/BtKKgqXz04A" allowfullscreen></iframe></div></article>
+      <article class="card"><h3>✋ Video 3 – Cara Memerah ASI dengan Tangan</h3><p>Tidak selalu harus dengan alat, Ibu juga bisa memerah ASI dengan tangan secara mudah dan higienis.</p><div class="video-wrapper"><iframe src="https://www.youtube.com/embed/0bMzwkYYPVo" allowfullscreen></iframe></div></article>
+      <article class="card"><h3>☕ Video 4 – Memberi ASI Menggunakan Cangkir</h3><p>Bayi bisa menerima ASI tanpa botol! Yuk, kita belajar cara memberikan ASI perah menggunakan cangkir kecil dengan aman dan nyaman untuk bayi.</p><div class="video-wrapper"><iframe src="https://www.youtube.com/embed/2tO0v92MSxA" allowfullscreen></iframe></div></article>
+      <article class="card"><h3>💼 Video 5 – Ibu Bekerja dan Tantangan Menyusui</h3><p>Menjadi ibu bekerja bukan berarti berhenti menyusui.</p><div class="video-wrapper"><iframe src="https://www.youtube.com/embed/3njhO0C0hmY" allowfullscreen></iframe></div></article>
+    </div>
+    <div class="cta-center"><a href="pretest.html" class="btn btn-primary center-btn">Lanjut ke Pre-Test</a></div>
+  </section>
+
+  <footer class="footer"><p>© 2025 EduASI. Dibuat untuk edukasi ibu menyusui.</p></footer>
+
+  <script>
+    const toggle = document.querySelector('.menu-toggle');
+    const navRight = document.querySelector('.nav-right');
+    toggle.addEventListener('click', () => navRight.classList.toggle('active'));
+  </script>
+</body>
+</html>

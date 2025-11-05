@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Post-Test EduASI</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script defer src="app.js"></script>
+  <link rel="icon" href="assets/favicon.png" type="image/png">
+</head>
+<body class='fade-in'>
+  <nav class="navbar">
+    <div class="nav-left">
+      <img src="assets/logo-eduasi.png" alt="Logo EduASI" class="nav-logo">
+      <span class="brand">EduASI</span>
+    </div>
+    <div class="menu-toggle"><span></span><span></span><span></span></div>
+    <div class="nav-right">
+      <a href="index.html#beranda">Beranda</a>
+      <a href="index.html#videos">Video Edukasi</a>
+      <a href="pretest.html">Pre-Test</a>
+      <a href="posttest.html">Post-Test</a>
+      <a href="index.html#kontak">Kontak</a>
+    </div>
+  </nav>
+
+  <header class="hero slim">
+    <div class="hero-inner">
+      <h1>Post-Test</h1>
+      <p class="subtitle">Mohon isi data diri dan kuesioner dengan jujur.</p>
+    </div>
+  </header>
+
+  <section class="section">
+    <form id="quiz-form" class="form-card" data-type="posttest">
+        <div class="card">
+          <h3>🧕 Data Diri</h3>
+        
+      <div class="grid">
+        <div class="form-group"><label>Nama Lengkap</label><input id="nama" type="text" required></div>
+        <div class="form-group"><label>Nomor HP</label><input id="nohp" type="tel" required></div>
+      </div>
+      </div><div class="card"><h3>📝 Kuesioner</h3><div id="questions"></div>
+      <div class="actions"><button type="submit" class="btn btn-primary">Kirim Jawaban</button></div>
+    </div></form>
+  </section>
+
+  <script>
+    const toggle = document.querySelector('.menu-toggle');
+    const navRight = document.querySelector('.nav-right');
+    toggle.addEventListener('click', () => navRight.classList.toggle('active'));
+  </script>
+</body>
+</html>
